@@ -1,0 +1,132 @@
+body{ background-color: #eee;
+
+
+
+}
+.photo{
+    height: 320px;
+    position: relative;
+    /* background-color: #eee; */
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(23\).jpg);
+    background-size: cover;
+}
+.overlay{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #00000066;
+    top: 0;
+    left: 0;
+}
+
+.photo img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.info{
+    padding-top: 35px;
+    text-align: center;
+}
+.info h2{font-size: 36px; margin-bottom: 0;}
+.info h4{font-size: 23px; margin: 0; margin-top: 10px;}
+.vedio{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(24\).jpg);
+    background-size: cover;
+    position: relative;
+}
+.middle{
+    background-color: #ddd;
+    padding: 15px;
+}
+.vedio video{width: 50%; z-index: 1;}
+
+
+.vedio .text p{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 1.3;
+}
+.vedio .text {padding-right: 10px; z-index: 1; color: #c3c3c3;}
+.vedio .text h3{font-size: 27px;}
+.projects{
+    font-size: 30px;
+    padding: 5px 10px ;
+    border-radius: 10px;
+    color: white;
+    background-color: #0075ff;
+    width: fit-content;
+    margin: 0;
+}
+.vedio a{
+    text-decoration: none;
+    color: white;
+    background: #0075ff;
+    padding: 2px 5px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.code{
+    border: 1px solid #ededed33;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+
+@media(max-width:767px)
+{
+    .vedio{flex-direction: column;}
+    .vedio video{width: 100%;}
+    .photo img{
+        width: 200px;
+        height: 200px;
+    }
+    .photo{
+        height: 220px;
+    }
+    .vedio .text { padding-bottom: 20px;}
+    .projects{font-size: 20px;}
+    
+}
+.s-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+.myfooter
+{
+    padding-top: 5px;
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    font-style: italic;
+    padding: 10px;
+}
+.myfooter span{font-size: 18px;}
+.myfooter i{color: white; padding: 10px;}
+.myfooter .face:hover{color: #1877F2;}
+.myfooter .insta:hover{color: #dd2a7b;}
+.myfooter .whats:hover{color: #25d366;}
